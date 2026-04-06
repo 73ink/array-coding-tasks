@@ -63,9 +63,17 @@ public class Coding {
 //
 //        System.out.println(sameFirstLast(nums));
         // task 10
+//        int[] nums = {1, 2, 3};
+//
+//        System.out.println(sameFirstLast(nums));
+        // task 11
         int[] nums = {1, 2, 3};
 
-        System.out.println(sameFirstLast(nums));
+        int[] result11 = maxEnd3(nums);
+
+        for (int i = 0; i < result11.length; i++) {
+            System.out.println(result11[i]);
+        }
     }
     public static boolean firstLast6(int[] nums){
         if ((nums[0] == 6) || nums[nums.length - 1] ==6) {
@@ -137,6 +145,21 @@ public class Coding {
             return true;
         }
         return false;
+    }
+    public static int[] maxEnd3(int[] nums) {
+        int max;
+
+        if (nums[0] > nums[2]) {
+            max = nums[0];
+        } else {
+            max = nums[2];
+        }
+
+        nums[0] = max;
+        nums[1] = max;
+        nums[2] = max;
+
+        return nums;
     }
 
 }
