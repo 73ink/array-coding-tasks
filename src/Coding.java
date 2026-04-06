@@ -135,11 +135,24 @@ public class Coding {
 //        int[] nums = {1, 2, 3};
 //
 //        System.out.println(sum2(nums));
-        // task 21
-        // task 22
-        int[] nums = {2, 2};
 
-        System.out.println(double23(nums));
+        // task 21
+//        int[] nums = {2, 5};
+//
+//        System.out.println(has23(nums));
+        // task 22
+//        int[] nums = {2, 2};
+//
+//        System.out.println(double23(nums));
+        // task 23
+        int[] a = {1, 2};
+        int[] b = {3, 4};
+
+        int[] result23 = biggerTwo(a, b);
+
+        for (int i = 0; i < result23.length; i++) {
+            System.out.println(result23[i]);
+        }
     }
     public static boolean firstLast6(int[] nums){
         if ((nums[0] == 6) || nums[nums.length - 1] ==6) {
@@ -317,5 +330,15 @@ public class Coding {
             }
         }
         return false;
+    }
+    public static int[] biggerTwo(int[] a, int[] b) {
+        int sumA = a[0] + a[1];
+        int sumB = b[0] + b[1];
+
+        if (sumA >= sumB) {
+            return a;
+        }
+
+        return b;
     }
 }
