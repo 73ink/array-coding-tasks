@@ -109,13 +109,19 @@ public class Coding {
 //
 //        System.out.println(maxTriple(nums));
         // task 17
-        int[] a = {4};
-        int[] b = {1, 2, 3};
+//        int[] a = {4};
+//        int[] b = {1, 2, 3};
+//
+//        int[] result17 = make2(a, b);
+//
+//        for (int i = 0; i < result17.length; i++) {
+//            System.out.println(result17[i]);
+//        }
+        // task 18
+        int[] result18 = makePi();
 
-        int[] result17 = make2(a, b);
-
-        for (int i = 0; i < result17.length; i++) {
-            System.out.println(result17[i]);
+        for (int i = 0; i < result18.length; i++) {
+            System.out.println(result18[i]);
         }
     }
     public static boolean firstLast6(int[] nums){
@@ -260,6 +266,10 @@ public class Coding {
             index++;
         }
 
+        return result;
+    }
+    public static int[] makePi() {
+        int[] result = {3, 1, 4};
         return result;
     }
 }
