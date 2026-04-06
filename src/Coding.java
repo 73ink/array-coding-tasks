@@ -105,9 +105,18 @@ public class Coding {
 //            System.out.println(result15[i]);
 //        }
         // task 16
-        int[] nums = {1, 5, 3};
+//        int[] nums = {1, 5, 3};
+//
+//        System.out.println(maxTriple(nums));
+        // task 17
+        int[] a = {4};
+        int[] b = {1, 2, 3};
 
-        System.out.println(maxTriple(nums));
+        int[] result17 = make2(a, b);
+
+        for (int i = 0; i < result17.length; i++) {
+            System.out.println(result17[i]);
+        }
     }
     public static boolean firstLast6(int[] nums){
         if ((nums[0] == 6) || nums[nums.length - 1] ==6) {
@@ -236,5 +245,21 @@ public class Coding {
         }
 
         return max;
+    }
+    public static int[] make2(int[] a, int[] b) {
+        int[] result = new int[2];
+        int index = 0;
+
+        for (int i = 0; i < a.length && index < 2; i++) {
+            result[index] = a[i];
+            index++;
+        }
+
+        for (int i = 0; i < b.length && index < 2; i++) {
+            result[index] = b[i];
+            index++;
+        }
+
+        return result;
     }
 }
