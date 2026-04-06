@@ -96,14 +96,18 @@ public class Coding {
 //
 //        System.out.println(start1(a, b));
         // task 15
-        int[] a = {1, 2};
-        int[] b = {3, 4};
+//        int[] a = {1, 2};
+//        int[] b = {3, 4};
+//
+//        int[] result15 = plusTwo(a, b);
+//
+//        for (int i = 0; i < result15.length; i++) {
+//            System.out.println(result15[i]);
+//        }
+        // task 16
+        int[] nums = {1, 5, 3};
 
-        int[] result15 = plusTwo(a, b);
-
-        for (int i = 0; i < result15.length; i++) {
-            System.out.println(result15[i]);
-        }
+        System.out.println(maxTriple(nums));
     }
     public static boolean firstLast6(int[] nums){
         if ((nums[0] == 6) || nums[nums.length - 1] ==6) {
@@ -216,5 +220,21 @@ public class Coding {
     public static int[] plusTwo(int[] a, int[] b) {
         int[] result = {a[0], a[1], b[0], b[1]};
         return result;
+    }
+    public static int maxTriple(int[] nums) {
+        int first = nums[0];
+        int middle = nums[nums.length / 2];
+        int last = nums[nums.length - 1];
+        int max = first;
+
+        if (middle > max) {
+            max = middle;
+        }
+
+        if (last > max) {
+            max = last;
+        }
+
+        return max;
     }
 }
