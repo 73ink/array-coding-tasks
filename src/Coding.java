@@ -124,13 +124,17 @@ public class Coding {
 //            System.out.println(result18[i]);
 //        }
         // task 19
-        int[] nums = {5, 11, 9};
+//        int[] nums = {5, 11, 9};
+//
+//        int[] result19 = rotateLeft3(nums);
+//
+//        for (int i = 0; i < result19.length; i++) {
+//            System.out.println(result19[i]);
+//        }
+        // task 20
+        int[] nums = {1, 2, 3};
 
-        int[] result19 = rotateLeft3(nums);
-
-        for (int i = 0; i < result19.length; i++) {
-            System.out.println(result19[i]);
-        }
+        System.out.println(sum2(nums));
     }
     public static boolean firstLast6(int[] nums){
         if ((nums[0] == 6) || nums[nums.length - 1] ==6) {
@@ -283,5 +287,16 @@ public class Coding {
     public static int[] rotateLeft3(int[] nums){
         int[] result = {nums[1], nums[2], nums[0]};
         return result;
+    }
+    public static int sum2(int[] nums) {
+        if (nums.length == 0) {
+            return 0;
+        }
+
+        if (nums.length == 1) {
+            return nums[0];
+        }
+
+        return nums[0] + nums[1];
     }
 }
