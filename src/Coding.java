@@ -39,12 +39,20 @@ public class Coding {
 //            System.out.println(result6[i]);
 //        }
         // task 7
-        int[] nums = {4, 7, 9, 10};
+//        int[] nums = {4, 7, 9, 10};
+//
+//        int[] result7 = makeMiddle(nums);
+//
+//        for (int i = 0; i < result7.length; i++) {
+//            System.out.println(result7[i]);
+//        }
+        // task 8
+        int[] nums = {8, 6, 7, 5, 3, 0, 9};
 
-        int[] result7 = makeMiddle(nums);
+        int[] result8 = midThree(nums);
 
-        for (int i = 0; i < result7.length; i++) {
-            System.out.println(result7[i]);
+        for (int i = 0; i < result8.length; i++) {
+            System.out.println(result8[i]);
         }
     }
     public static boolean firstLast6(int[] nums){
@@ -91,4 +99,11 @@ public class Coding {
         int[] result = {mid1, mid2};
         return result;
     }
+    public static int[] midThree(int[] nums) {
+        int middle = nums.length / 2;
+
+        int[] result = {nums[middle - 1], nums[middle], nums[middle + 1]};
+        return result;
+    }
+
 }
