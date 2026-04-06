@@ -91,10 +91,19 @@ public class Coding {
 //            System.out.println(result13[i]);
 //        }
         // task 14
-        int[] a = {1, 2, 3};
-        int[] b = {1, 3};
+//        int[] a = {1, 2, 3};
+//        int[] b = {1, 3};
+//
+//        System.out.println(start1(a, b));
+        // task 15
+        int[] a = {1, 2};
+        int[] b = {3, 4};
 
-        System.out.println(start1(a, b));
+        int[] result15 = plusTwo(a, b);
+
+        for (int i = 0; i < result15.length; i++) {
+            System.out.println(result15[i]);
+        }
     }
     public static boolean firstLast6(int[] nums){
         if ((nums[0] == 6) || nums[nums.length - 1] ==6) {
@@ -203,5 +212,9 @@ public class Coding {
         }
 
         return count;
+    }
+    public static int[] plusTwo(int[] a, int[] b) {
+        int[] result = {a[0], a[1], b[0], b[1]};
+        return result;
     }
 }
