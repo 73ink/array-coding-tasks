@@ -67,12 +67,20 @@ public class Coding {
 //
 //        System.out.println(sameFirstLast(nums));
         // task 11
-        int[] nums = {1, 2, 3};
+//        int[] nums = {1, 2, 3};
+//
+//        int[] result11 = maxEnd3(nums);
+//
+//        for (int i = 0; i < result11.length; i++) {
+//            System.out.println(result11[i]);
+//        }
+        // task 12
+        int[] nums = {7, 4, 6, 2};
 
-        int[] result11 = maxEnd3(nums);
+        int[] result12 = makeEnds(nums);
 
-        for (int i = 0; i < result11.length; i++) {
-            System.out.println(result11[i]);
+        for (int i = 0; i < result12.length; i++) {
+            System.out.println(result12[i]);
         }
     }
     public static boolean firstLast6(int[] nums){
@@ -161,5 +169,8 @@ public class Coding {
 
         return nums;
     }
-
+    public static int[] makeEnds(int[] nums) {
+        int[] result = {nums[0], nums[nums.length - 1]};
+        return result;
+    }
 }
