@@ -47,13 +47,21 @@ public class Coding {
 //            System.out.println(result7[i]);
 //        }
         // task 8
-        int[] nums = {8, 6, 7, 5, 3, 0, 9};
+//        int[] nums = {8, 6, 7, 5, 3, 0, 9};
+//
+//        int[] result8 = midThree(nums);
+//
+//        for (int i = 0; i < result8.length; i++) {
+//            System.out.println(result8[i]);
+//        }
+        // task 9
+//        int[] nums = {2, 1, 1, 4, 5};
+//
+//        System.out.println(unlucky1(nums));
+//        // task 10
+        int[] nums = {1, 2, 3, 1};
 
-        int[] result8 = midThree(nums);
-
-        for (int i = 0; i < result8.length; i++) {
-            System.out.println(result8[i]);
-        }
+        System.out.println(sameFirstLast(nums));
     }
     public static boolean firstLast6(int[] nums){
         if ((nums[0] == 6) || nums[nums.length - 1] ==6) {
@@ -105,5 +113,25 @@ public class Coding {
         int[] result = {nums[middle - 1], nums[middle], nums[middle + 1]};
         return result;
     }
+    public static boolean unlucky1(int[] nums) {
+        if (nums.length >= 2 && nums[0] == 1 && nums[1] == 3) {
+            return true;
+        }
 
+        if (nums.length >= 3 && nums[1] == 1 && nums[2] == 3) {
+            return true;
+        }
+
+        if (nums.length >= 2 && nums[nums.length - 2] == 1 && nums[nums.length - 1] == 3) {
+            return true;
+        }
+
+        return false;
+    }
+    public static boolean sameFirstLast(int[] nums) {
+        if (nums.length >= 1 && nums[0] == nums[nums.length - 1]) {
+            return true;
+        }
+        return false;
+    }
 }
