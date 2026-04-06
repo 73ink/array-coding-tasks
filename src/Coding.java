@@ -154,12 +154,20 @@ public class Coding {
 //            System.out.println(result23[i]);
 //        }
         // task 24
-        int[] nums = {1, 2, 3, 4};
+//        int[] nums = {1, 2, 3, 4};
+//
+//        int[] result24 = swapEnds(nums);
+//
+//        for (int i = 0; i < result24.length; i++) {
+//            System.out.println(result24[i]);
+//        }
+        // task 25
+        int[] nums = {1, 2, 3};
 
-        int[] result24 = swapEnds(nums);
+        int[] result25 = frontPiece(nums);
 
-        for (int i = 0; i < result24.length; i++) {
-            System.out.println(result24[i]);
+        for (int i = 0; i < result25.length; i++) {
+            System.out.println(result25[i]);
         }
     }
     public static boolean firstLast6(int[] nums){
@@ -353,6 +361,14 @@ public class Coding {
         int temp = nums[0];
         nums[0] = nums[nums.length - 1];
         nums[nums.length - 1] = temp;
+
+        return nums;
+    }
+    public static int[] frontPiece(int[] nums) {
+        if (nums.length >= 2) {
+            int[] result = {nums[0], nums[1]};
+            return result;
+        }
 
         return nums;
     }
