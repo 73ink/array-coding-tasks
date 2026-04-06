@@ -162,12 +162,21 @@ public class Coding {
 //            System.out.println(result24[i]);
 //        }
         // task 25
-        int[] nums = {1, 2, 3};
+//        int[] nums = {1, 2, 3};
+//
+//        int[] result25 = frontPiece(nums);
+//
+//        for (int i = 0; i < result25.length; i++) {
+//            System.out.println(result25[i]);
+//        }
+        // task 26
+        int[] a = {1, 2, 3};
+        int[] b = {7, 9, 8};
 
-        int[] result25 = frontPiece(nums);
+        int[] result26 = front11(a, b);
 
-        for (int i = 0; i < result25.length; i++) {
-            System.out.println(result25[i]);
+        for (int i = 0; i < result26.length; i++) {
+            System.out.println(result26[i]);
         }
     }
     public static boolean firstLast6(int[] nums){
@@ -371,5 +380,24 @@ public class Coding {
         }
 
         return nums;
+    }
+    public static int[] front11(int[] a, int[] b) {
+        if (a.length > 0 && b.length > 0) {
+            int[] result = {a[0], b[0]};
+            return result;
+        }
+
+        if (a.length > 0) {
+            int[] result = {a[0]};
+            return result;
+        }
+
+        if (b.length > 0) {
+            int[] result = {b[0]};
+            return result;
+        }
+
+        int[] result = {};
+        return result;
     }
 }
