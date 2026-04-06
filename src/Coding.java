@@ -145,13 +145,21 @@ public class Coding {
 //
 //        System.out.println(double23(nums));
         // task 23
-        int[] a = {1, 2};
-        int[] b = {3, 4};
+//        int[] a = {1, 2};
+//        int[] b = {3, 4};
+//
+//        int[] result23 = biggerTwo(a, b);
+//
+//        for (int i = 0; i < result23.length; i++) {
+//            System.out.println(result23[i]);
+//        }
+        // task 24
+        int[] nums = {1, 2, 3, 4};
 
-        int[] result23 = biggerTwo(a, b);
+        int[] result24 = swapEnds(nums);
 
-        for (int i = 0; i < result23.length; i++) {
-            System.out.println(result23[i]);
+        for (int i = 0; i < result24.length; i++) {
+            System.out.println(result24[i]);
         }
     }
     public static boolean firstLast6(int[] nums){
@@ -340,5 +348,12 @@ public class Coding {
         }
 
         return b;
+    }
+    public static int[] swapEnds(int[] nums) {
+        int temp = nums[0];
+        nums[0] = nums[nums.length - 1];
+        nums[nums.length - 1] = temp;
+
+        return nums;
     }
 }
