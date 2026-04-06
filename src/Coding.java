@@ -83,13 +83,18 @@ public class Coding {
 //            System.out.println(result12[i]);
 //        }
         // task 13
-        int[] nums = {4, 5, 6};
+//        int[] nums = {4, 5, 6};
+//
+//        int[] result13 = makeLast(nums);
+//
+//        for (int i = 0; i < result13.length; i++) {
+//            System.out.println(result13[i]);
+//        }
+        // task 14
+        int[] a = {1, 2, 3};
+        int[] b = {1, 3};
 
-        int[] result13 = makeLast(nums);
-
-        for (int i = 0; i < result13.length; i++) {
-            System.out.println(result13[i]);
-        }
+        System.out.println(start1(a, b));
     }
     public static boolean firstLast6(int[] nums){
         if ((nums[0] == 6) || nums[nums.length - 1] ==6) {
@@ -185,5 +190,18 @@ public class Coding {
         int[] result = new int[nums.length * 2];
         result[result.length - 1] = nums[nums.length - 1];
         return result;
+    }
+    public static int start1(int[] a, int[] b) {
+        int count = 0;
+
+        if (a.length > 0 && a[0] == 1) {
+            count++;
+        }
+
+        if (b.length > 0 && b[0] == 1) {
+            count++;
+        }
+
+        return count;
     }
 }
