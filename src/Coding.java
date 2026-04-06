@@ -132,9 +132,13 @@ public class Coding {
 //            System.out.println(result19[i]);
 //        }
         // task 20
-        int[] nums = {1, 2, 3};
+//        int[] nums = {1, 2, 3};
+//
+//        System.out.println(sum2(nums));
+        // task 21
+        int[] nums = {2, 5};
 
-        System.out.println(sum2(nums));
+        System.out.println(has23(nums));
     }
     public static boolean firstLast6(int[] nums){
         if ((nums[0] == 6) || nums[nums.length - 1] ==6) {
@@ -298,5 +302,11 @@ public class Coding {
         }
 
         return nums[0] + nums[1];
+    }
+    public static boolean has23(int[] nums) {
+        if (nums[0] == 2 || nums[0] == 3 || nums[1] == 2 || nums[1] == 3) {
+            return true;
+        }
+        return false;
     }
 }
