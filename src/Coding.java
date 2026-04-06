@@ -75,12 +75,20 @@ public class Coding {
 //            System.out.println(result11[i]);
 //        }
         // task 12
-        int[] nums = {7, 4, 6, 2};
+//        int[] nums = {7, 4, 6, 2};
+//
+//        int[] result12 = makeEnds(nums);
+//
+//        for (int i = 0; i < result12.length; i++) {
+//            System.out.println(result12[i]);
+//        }
+        // task 13
+        int[] nums = {4, 5, 6};
 
-        int[] result12 = makeEnds(nums);
+        int[] result13 = makeLast(nums);
 
-        for (int i = 0; i < result12.length; i++) {
-            System.out.println(result12[i]);
+        for (int i = 0; i < result13.length; i++) {
+            System.out.println(result13[i]);
         }
     }
     public static boolean firstLast6(int[] nums){
@@ -171,6 +179,11 @@ public class Coding {
     }
     public static int[] makeEnds(int[] nums) {
         int[] result = {nums[0], nums[nums.length - 1]};
+        return result;
+    }
+    public static int[] makeLast(int[] nums) {
+        int[] result = new int[nums.length * 2];
+        result[result.length - 1] = nums[nums.length - 1];
         return result;
     }
 }
