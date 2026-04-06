@@ -27,9 +27,17 @@ public class Coding {
 //            System.out.println(result4[i]);
 //        }
         // task 5
-        int[] nums2 = {4, 2};
+//        int[] nums2 = {4, 2};
+//
+//        System.out.println(no23(nums2));
+        // task 6
+        int[] nums = {2, 3, 5};
 
-        System.out.println(no23(nums2));
+        int[] result6 = fix23(nums);
+
+        for (int i = 0; i < result6.length; i++) {
+            System.out.println(result6[i]);
+        }
     }
     public static boolean firstLast6(int[] nums){
         if ((nums[0] == 6) || nums[nums.length - 1] ==6) {
@@ -56,5 +64,16 @@ public class Coding {
             return true;
         }
         return false;
+    }
+    public static int[] fix23(int[] nums) {
+        if (nums[0] == 2 && nums[1] == 3) {
+            nums[1] = 0;
+        }
+
+        if (nums[1] == 2 && nums[2] == 3) {
+            nums[2] = 0;
+        }
+
+        return nums;
     }
 }
