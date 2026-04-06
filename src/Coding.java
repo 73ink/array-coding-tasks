@@ -118,10 +118,18 @@ public class Coding {
 //            System.out.println(result17[i]);
 //        }
         // task 18
-        int[] result18 = makePi();
+//        int[] result18 = makePi();
+//
+//        for (int i = 0; i < result18.length; i++) {
+//            System.out.println(result18[i]);
+//        }
+        // task 19
+        int[] nums = {5, 11, 9};
 
-        for (int i = 0; i < result18.length; i++) {
-            System.out.println(result18[i]);
+        int[] result19 = rotateLeft3(nums);
+
+        for (int i = 0; i < result19.length; i++) {
+            System.out.println(result19[i]);
         }
     }
     public static boolean firstLast6(int[] nums){
@@ -270,6 +278,10 @@ public class Coding {
     }
     public static int[] makePi() {
         int[] result = {3, 1, 4};
+        return result;
+    }
+    public static int[] rotateLeft3(int[] nums){
+        int[] result = {nums[1], nums[2], nums[0]};
         return result;
     }
 }
