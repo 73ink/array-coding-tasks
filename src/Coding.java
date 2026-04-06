@@ -59,7 +59,11 @@ public class Coding {
 //
 //        System.out.println(unlucky1(nums));
 //        // task 10
-        int[] nums = {1, 2, 3, 1};
+//        int[] nums = {1, 2, 3, 1};
+//
+//        System.out.println(sameFirstLast(nums));
+        // task 10
+        int[] nums = {1, 2, 3};
 
         System.out.println(sameFirstLast(nums));
     }
@@ -134,4 +138,5 @@ public class Coding {
         }
         return false;
     }
+
 }
