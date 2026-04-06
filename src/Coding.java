@@ -1,6 +1,6 @@
 public class Coding {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         // task 1
 //        int[] nums = {6, 1, 2, 3};
 //        System.out.println(firstLast6(nums));
@@ -10,12 +10,21 @@ public class Coding {
 //
 //        System.out.println(commonEnd(a, b));
         // task 3
-        int[] nums = {5, 11, 9};
+//        int[] nums = {5, 11, 9};
+//
+//        int[] result3 = reverse3(nums);
+//
+//        for (int i = 0; i < result3.length; i++) {
+//            System.out.println(result3[i]);
+//    }
+        // task 4
+        int[] a = {1, 2, 3};
+        int[] b = {4, 5, 6};
 
-        int[] result3 = reverse3(nums);
+        int[] result4 = middleWay(a, b);
 
-        for (int i = 0; i < result3.length; i++) {
-            System.out.println(result3[i]);
+        for (int i = 0; i < result4.length; i++) {
+            System.out.println(result4[i]);
         }
     }
     public static boolean firstLast6(int[] nums){
@@ -33,5 +42,9 @@ public class Coding {
     public static int[] reverse3(int[] nums) {
         int[] reversed = {nums[2], nums[1], nums[0]};
         return reversed;
+    }
+    public static int[] middleWay(int[] a, int[] b) {
+        int[] middle = {a[1], b[1]};
+        return middle;
     }
 }
